@@ -4,7 +4,7 @@ The level goal said that "The password for the next level is stored in a file ca
 
 I looked for files in teh home directory and found:
 
-```console
+```shell
 bandit0@bandit:~$ ls
 readme
 ```
@@ -13,7 +13,7 @@ And it showed a file called readme
 
 So then I read it using cat:
 
-```console
+```shell
 bandit0@bandit:~$ cat readme
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 ```
