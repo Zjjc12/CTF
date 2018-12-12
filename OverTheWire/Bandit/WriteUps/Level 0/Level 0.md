@@ -5,20 +5,20 @@ I was met with a welcome screen of with the gaol of the game to log using ssh. A
 
 I tried :
 
-‘’’
+```
 ssh bandit0@bandit.labs.overthewire.org
-‘’’
+```
 
 And I was met with:
 
-‘’’
+```
 bandit0@bandit.labs.overthewire.org: Permission denied (publicly, password).
-‘’’
+```
 
 After a bit of time I realized that my default port was probably 22 so then I ran:
 
-‘’’
+```
 ssh bandit0@bandit.labs.overthewire.org -p 2220
-‘’’
+```
 
 After entering the password I was greeted with the welcome screen.
