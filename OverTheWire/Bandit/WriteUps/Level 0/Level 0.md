@@ -1,5 +1,4 @@
-# H1
-Level 0
+# Level 0
 
 I was met with a welcome screen of with the gaol of the game to log using ssh. An IP address, an user name, a password, and a port was given. First I figured that I had to ssh to the host.
 
