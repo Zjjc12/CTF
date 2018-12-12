@@ -1,6 +1,6 @@
-# Level 1
+# Level 0
 
-The level goal said that "The password for the next level is stored in a file called - located in the home directory"
+The level goal said that "The password for the next level is stored in a file called "readme"
 
 I looked for files in the home directory and found:
 
