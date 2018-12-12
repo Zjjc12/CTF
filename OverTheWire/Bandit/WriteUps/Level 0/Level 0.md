@@ -5,19 +5,20 @@ I was met with a welcome screen of with the gaol of the game to log using ssh. A
 I tried :
 
 ```console
-ssh bandit0@bandit.labs.overthewire.org
+zjjc123@kali:~$ ssh bandit0@bandit.labs.overthewire.org
 ```
 
 And I was met with:
 
 ```console
-bandit0@bandit.labs.overthewire.org: Permission denied (publicly, password).
+bandit0@bandit.labs.overthewire.org's password: 
+Permission denied, please try again.
 ```
 
 After a bit of time I realized that my default port was probably 22 so then I ran:
 
 ```console
-ssh bandit0@bandit.labs.overthewire.org -p 2220
+zjjc123@kali:~$ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
 
 After entering the password I was greeted with the welcome screen.
