@@ -33,30 +33,45 @@ Hmmmmm...
 bandit4@bandit:~/inhere$ file ./-file00
 ./-file00: data
 ```
-Searched around for a bit found cat -vt
-```console
-bandit4@bandit:~/inhere$ cat -vt ./-file00
-pCM-5M-D^MM-hM-wM-,M-^BM-(M-0M-^^M-^@^SM-tM-&~%^I^SC[M-'M-jM-1M-1>M-zM-P^D| M-^T
-```
-Seems legit
-```console
-bandit4@bandit:~/inhere$ cat -vt ./-file01
-M-;M-^XM-XU"7M-"w^YM-bM-ZM-^HM-^AM-+M-CM-*M-PQM-^PM-tM-^MM-^B(M-^Q^DM-lM-D#M-&M--M-R^@bandit4@bandit:~/inhere$ cat -vt ./-file02
-M-i^^T^_M-^^vM-^ZM-^M(M-qM-VM-4M-2M-^BM-^[M-^CM-lA*M-^U
-2^UJM-^IM-EM-^^M-XM-^G_M-5y7bandit4@bandit:~/inhere$ cat -vt ./-file03
-M-iM-^V.AM-^HM-iuM-^^M-|#M-gM-U^\M-Ew$N?cM-^C-M-^]M-;Db3^TM-^KM-`=M-v^BM-xbandit4@bandit:~/inhere$ cat -vt ./-file04
-M-^N=<M-B^HM-^KWM-^^GM-uM-V^P^@M-^GM-#htM-^D^GZM-^SM-^S!^X^PM-^UM-[{^YM-^VU^KM-xbandit4@bandit:~/inhere$ cat -vt ./-file05
-+^T^CM-,M-;p^C^Pm^^^AM-^?M-8M-^G;^QM-]M-l:DM-^XM-x^M-^ZM-:@^@M-bglM-]QM-kbandit4@bandit:~/inhere$ cat -vt ./-file06
-M-^\^EM-)@M-9%@M-dM-ZM-M^XZP*E^B^BM-&M-s1M-CVM-^CM-^YM-^WM-LM-+*M-&M-.M-^I^YM-[
-```
+Seems like random garbage. Cat -vt doesn't seem right.
 ```console
 bandit4@bandit:~/inhere$ cat -vt ./-file07
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 ```
-Try it:
-
+Lets try:
 ```console
-zjjc123@kali:~$ ssh bandit5@bandit.labs.overthewire.org -p 2220
+bandit4@bandit:~/inhere$ ls -h
+-file00  -file02  -file04  -file06  -file08
+-file01  -file03  -file05  -file07  -file09
 ```
-Works
+Nope
+```console
+bandit4@bandit:~/inhere$ file *
+file: Cannot open `ile00' (No such file or directory).
+file: Cannot open `ile01' (No such file or directory).
+file: Cannot open `ile02' (No such file or directory).
+file: Cannot open `ile03' (No such file or directory).
+file: Cannot open `ile04' (No such file or directory).
+file: Cannot open `ile05' (No such file or directory).
+file: Cannot open `ile06' (No such file or directory).
+file: Cannot open `ile07' (No such file or directory).
+file: Cannot open `ile08' (No such file or directory).
+file: Cannot open `ile09' (No such file or directory).
+```
+Ahh the filename
+How about:
+```console
+bandit4@bandit:~/inhere$ cat ./*
+����������~%	C[�걱>��| ����U"7�w���H��ê�Q��(���#����T�v��(�ִ�����A*�
+2J�Ş؇_�y7�.A��u��#���w$N?c�-��Db3��=���=<�W�����ht�Z��!��{�U�+��pm���;��:D��^��@�gl�Q��@�%@���ZP*E��1�V���̫*����koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+FPn�
+    '�U���M��/u
+               XS
+�mu�z���хN�{��Y�d4�����]3�����9(�
+```
+There it is:
+```
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+```
+
 
