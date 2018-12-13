@@ -34,10 +34,7 @@ bandit4@bandit:~/inhere$ file ./-file00
 ./-file00: data
 ```
 Seems like random garbage. Cat -vt doesn't seem right.
-```console
-bandit4@bandit:~/inhere$ cat -vt ./-file07
-koReBOKuIDDepwhWk7jZC0RTdopnAYKh
-```
+
 Lets try:
 ```console
 bandit4@bandit:~/inhere$ ls -h
@@ -59,12 +56,13 @@ file: Cannot open `ile08' (No such file or directory).
 file: Cannot open `ile09' (No such file or directory).
 ```
 Ahh the filename
+
 How about:
 ```console
 bandit4@bandit:~/inhere$ cat ./*
 ����������~%	C[�걱>��| ����U"7�w���H��ê�Q��(���#����T�v��(�ִ�����A*�
 2J�Ş؇_�y7�.A��u��#���w$N?c�-��Db3��=���=<�W�����ht�Z��!��{�U�+��pm���;��:D��^��@�gl�Q��@�%@���ZP*E��1�V���̫*����koReBOKuIDDepwhWk7jZC0RTdopnAYKh
-FPn�
+FPn
     '�U���M��/u
                XS
 �mu�z���хN�{��Y�d4�����]3�����9(�
