@@ -1,6 +1,6 @@
 # Level 3
 
-The level goal is to find a hidden fiel in the inhere directory.
+The level goal is to find a hidden file in the inhere directory.
 
 I first tried:
 ```console
