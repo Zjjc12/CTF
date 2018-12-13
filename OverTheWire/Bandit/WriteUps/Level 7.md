@@ -10,7 +10,7 @@ Tried catting it, would not recommend.
 ```console
 bandit7@bandit:~$ stat data.txt
   File: data.txt
-  Size: 4184396
+  Size: 4184396 		<-----
   .....
 ```
 Lets try grep:
